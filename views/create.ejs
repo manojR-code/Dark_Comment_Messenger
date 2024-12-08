@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="/stylesheet/create.css">
+</head>
+<body>
+    <div class="create-account-container">
+        <div class="create-account-box">
+            <h1>Welcome To Dark Commenting App 😈</h1>
+            <p class="tagline">Start Your Message By Creating Account</p>
+            <form method="post" action="/update" enctype="multipart/form-data">
+                <input type="text" placeholder="Full Name" name="name">
+                <input type="email" placeholder="Email Address" required name="email">
+                <input type="password" placeholder="Password" required name="password">
+
+                <!-- File Upload Input -->
+                <label for="profile_picture" class="file-label">Upload Profile Picture:</label>
+                <input type="file" id="profile_picture" name="image" accept="image/*" required>
+
+                <button type="submit">Create Account</button>
+            </form>
+            <p class="login-link">Already have an account? <a href="/">Login</a></p>
+        </div>
+    </div>
+</body>
+</html>

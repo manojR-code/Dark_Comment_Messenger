@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Themed User List</title>
+    <link rel="stylesheet" href="/stylesheet/frame.css">
+</head>
+<body>
+    <div class="containser1"><div class="loginimage"><img src="/images/uploads/<%=images%>" alt="" width="70px" height="70px"></div>
+    <div class="loginnae"><h1>Hello <%=login%>✌</h1></div></div>
+    <div class="container">
+        <h1>👥 User List</h1>
+        <% users.forEach((user) => { %>
+            <div class="user-box">
+                <div class="images"><img src="/images/uploads/<%=user.profile%>" alt="" width="60px" height="60px"></div>
+                <div class="user-item">
+                    <div class="user-info">
+                        <p><strong>Username:</strong> <%= user.name %></p>
+                    </div>
+                    <div class="action-buttons">
+                        <a href="/msg/<%= user._id %>" class="message-btn">Message</a>
+                    </div>
+                </div>
+            </div>
+        <% }) %>
+    </div>
+</body>
+</html>

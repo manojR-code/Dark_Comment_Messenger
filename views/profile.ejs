@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Theme Messaging</title>
+    <link rel="stylesheet" href="/stylesheet/profile.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="user receiver">
+            <div class="header">
+                <h3>Receiver:<%=names.name%></h3>
+            </div>
+            <div class="message-box">
+                <%if(rec.length==0){%>
+                <div class="message received">Noo Message received</div>
+                <%}else{%>
+                <%rec.forEach((msgs)=>{%>
+                    <div class="message received"><%=msgs.recs%></div>
+                    <%})%>
+                    <%}%>
+            </div>
+            
+        </div>
+        <div class="user sender">
+            <div class="header">
+                <h3>Sender:<%=users.name%></h3>  
+            </div>
+            <div class="message-box">
+                <%sent.forEach((msgs)=>{%>
+                    <div class="message sent"><%=msgs.sends%></div>
+                    <%})%>
+            </div>
+            <div class="message-form" >
+                <form action="/send/<%=names._id%>" method="post" >
+                <input type="text" id="messageInput" name="message" placeholder="Type a message...">
+                <button id="sendMessageButton">Send</button>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/scripting/vanilajs.js"></script>
+</html>
