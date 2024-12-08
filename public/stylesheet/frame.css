@@ -1,0 +1,105 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #ff9a9e, #fad0c4, #fbc2eb);
+    background-size: 200% 200%;
+    animation: gradientAnimation 8s ease infinite;
+    color: #2e2e2e;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+.loginimage{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+.containser1{
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* Container */
+.container {
+    width: 60%;
+    background: #ffffff;
+    padding: 20px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    color: #333333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* User List */
+.user-box {
+    margin-bottom: 15px;
+}
+
+.user-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f7f7f7;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, transform 0.3s ease;
+}
+
+.user-item:hover {
+    background: #f1f1f1;
+    transform: scale(1.02);
+}
+
+.user-info p {
+    margin: 0;
+    font-size: 1rem;
+    color: #555555;
+}
+
+/* Buttons */
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+.images{
+    width: 60px;
+    height: 60px;
+}
+.message-btn {
+    padding: 8px 15px;
+    border-radius: 5px;
+    background: #ff6f61;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.message-btn:hover {
+    background: #e55c50;
+    transform: scale(1.05);
+}
+
+/* Animation for Gradient Background */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+@media (max-width:900px) {
+    .container{
+        width: 80%;
+    }
+}

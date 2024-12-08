@@ -1,0 +1,134 @@
+/* Fixed styles for Create Account Page */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient( #ff758c, #ff7eb3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+}
+
+.create-account-container {
+    text-align: center;
+}
+
+.create-account-box {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    padding: 40px 30px;
+    width: 90%;
+    max-width: 360px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+.create-account-box h1 {
+    font-size: 2.2em;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.tagline {
+    font-size: 1.1em;
+    margin-bottom: 25px;
+    color: #ffe6e9;
+    font-style: italic;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input {
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    outline: none;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+input::placeholder {
+    color: #ffe6e9;
+}
+
+input:focus {
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+input[type="file"] {
+    padding: 12px;
+    border: 2px dashed #ff577f;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffe6e9;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: border 0.3s, background 0.3s;
+}
+
+input[type="file"]:hover {
+    border-color: #ff2e63;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+input[type="file"]::file-selector-button {
+    padding: 8px 16px;
+    background: #ff577f;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+input[type="file"]::file-selector-button:hover {
+    background: #ff2e63;
+}
+
+button {
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #ff577f;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #ff2e63;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.login-link {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #ffe6e9;
+}
+
+.login-link a {
+    color: #fff;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.login-link a:hover {
+    color: #ff2e63;
+}
